@@ -1,0 +1,153 @@
+{
+  "n_rows": 7043,
+  "n_cols_raw": 21,
+  "class_counts": {
+    "No": 5174,
+    "Yes": 1869
+  },
+  "n_features": 45,
+  "n_train": 5634,
+  "n_test": 1409,
+  "scenario_a": [
+    {
+      "n_estimators": 10,
+      "train_acc": 0.9812,
+      "test_acc": 0.7786
+    },
+    {
+      "n_estimators": 50,
+      "train_acc": 0.9977,
+      "test_acc": 0.78
+    },
+    {
+      "n_estimators": 100,
+      "train_acc": 0.998,
+      "test_acc": 0.7871
+    },
+    {
+      "n_estimators": 200,
+      "train_acc": 0.998,
+      "test_acc": 0.7857
+    },
+    {
+      "n_estimators": 500,
+      "train_acc": 0.998,
+      "test_acc": 0.7835
+    }
+  ],
+  "scenario_b": [
+    {
+      "max_depth": "None",
+      "train_acc": 0.998,
+      "test_acc": 0.7871,
+      "gap": 0.211
+    },
+    {
+      "max_depth": 3,
+      "train_acc": 0.789,
+      "test_acc": 0.7835,
+      "gap": 0.0054
+    },
+    {
+      "max_depth": 5,
+      "train_acc": 0.8016,
+      "test_acc": 0.7928,
+      "gap": 0.0088
+    },
+    {
+      "max_depth": 10,
+      "train_acc": 0.8745,
+      "test_acc": 0.8006,
+      "gap": 0.0739
+    },
+    {
+      "max_depth": 20,
+      "train_acc": 0.998,
+      "test_acc": 0.7871,
+      "gap": 0.211
+    }
+  ],
+  "best_n": 100,
+  "best_depth": 10,
+  "train_acc": 0.8745118920837771,
+  "test_acc": 0.8005677785663591,
+  "report": {
+    "Tidak Churn": {
+      "precision": 0.8378136200716846,
+      "recall": 0.9033816425120773,
+      "f1-score": 0.8693630869363087,
+      "support": 1035.0
+    },
+    "Churn": {
+      "precision": 0.658703071672355,
+      "recall": 0.516042780748663,
+      "f1-score": 0.5787106446776612,
+      "support": 374.0
+    },
+    "accuracy": 0.8005677785663591,
+    "macro avg": {
+      "precision": 0.7482583458720198,
+      "recall": 0.7097122116303702,
+      "f1-score": 0.7240368658069849,
+      "support": 1409.0
+    },
+    "weighted avg": {
+      "precision": 0.790271146614375,
+      "recall": 0.8005677785663591,
+      "f1-score": 0.7922133258257805,
+      "support": 1409.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      935,
+      100
+    ],
+    [
+      181,
+      193
+    ]
+  ],
+  "top10": [
+    {
+      "Feature": "tenure",
+      "Importance": 0.1413
+    },
+    {
+      "Feature": "TotalCharges",
+      "Importance": 0.1253
+    },
+    {
+      "Feature": "MonthlyCharges",
+      "Importance": 0.0885
+    },
+    {
+      "Feature": "Contract_Month-to-month",
+      "Importance": 0.0865
+    },
+    {
+      "Feature": "OnlineSecurity_No",
+      "Importance": 0.0527
+    },
+    {
+      "Feature": "InternetService_Fiber optic",
+      "Importance": 0.0525
+    },
+    {
+      "Feature": "PaymentMethod_Electronic check",
+      "Importance": 0.0447
+    },
+    {
+      "Feature": "TechSupport_No",
+      "Importance": 0.0409
+    },
+    {
+      "Feature": "Contract_Two year",
+      "Importance": 0.0281
+    },
+    {
+      "Feature": "OnlineBackup_No",
+      "Importance": 0.0186
+    }
+  ]
+}
